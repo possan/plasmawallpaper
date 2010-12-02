@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, activity!</string>
+    <string name="app_name">Plasmatest III</string>
+    <string name="wp_name">Plasmatest</string>
+    <string name="wp_desc">A crazy ugly plasma junk</string>
+</resources>
