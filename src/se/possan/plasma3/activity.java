@@ -12,16 +12,7 @@ public class activity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		/*
-		 * PlasmaSurfaceView psf = new PlasmaSurfaceView();
-		 * 
-		 * // R.id.preview
-		 */
 		setContentView(R.layout.main);
-		// LinearLayout v =
-		// (LinearLayout)getWindow().findViewById(R.id.preview);
-		// v.addView( )
-
 	}
 
 }

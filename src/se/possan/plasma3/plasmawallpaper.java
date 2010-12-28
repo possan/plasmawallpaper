@@ -64,11 +64,7 @@ public class plasmawallpaper extends WallpaperService {
 		public void onSurfaceChanged(SurfaceHolder holder, int format,
 				int width, int height) {
 			super.onSurfaceChanged(holder, format, width, height);
-			// store the center of the surface, so we can draw the cube in the
-			// right spot
 			pr.resize(width, height);
-			// mCenterX = width / 2.0f;
-			// mCenterY = height / 2.0f;
 			drawFrame();
 		}
 
@@ -112,12 +108,7 @@ public class plasmawallpaper extends WallpaperService {
 				drawFrame();
 			}
 		};
-		
-		/*
-		 * Draw one frame of the animation. This method gets called repeatedly
-		 * by posting a delayed Runnable. You can do any drawing you want in
-		 * here. This example draws a wireframe cube.
-		 */
+
 		void drawFrame() {
 			final SurfaceHolder holder = getSurfaceHolder();
 			Canvas c = null;
@@ -133,8 +124,8 @@ public class plasmawallpaper extends WallpaperService {
 			mHandler.removeCallbacks(mDrawCube);
 			if (!mVisible) 
 				return;
-			mHandler.postDelayed(mDrawCube, 1000 / 20);
-			pr.step(1000.0f / 20.0f);
+			mHandler.postDelayed(mDrawCube, 1000 / 60);
+			pr.step(1000.0f / 60.0f);
 		} 
 	}
 
